@@ -124,11 +124,11 @@ nav {
 }
 
 .services {
-	height: 40vh;
+	height: 30vh;
 }
 
 .services__item {
-	margin-top: 32px;
+	margin-top: 64px;
 	width: 270px;
 	float: left;
 	text-align: center;
@@ -174,9 +174,9 @@ nav {
 	padding-top: 80px;
 }
 
-.video p{
+.video{
 	text-align: center;
-	margin-bottom: 320px;
+	margin-bottom: 80px;
 }
 
 .about-elem{
