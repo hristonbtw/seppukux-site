@@ -22,7 +22,6 @@ header {
 	height: 100vh;	
 }
 
-
 .container {
 	width: 930px;
 	border: 10px;
@@ -125,7 +124,7 @@ nav {
 }
 
 .services {
-	height: 60vh;
+	height: 40vh;
 }
 
 .services__item {
@@ -155,10 +154,6 @@ nav {
 	margin-left: 60px;
 }
 
-#services {
-	padding-bottom: 110px;
-}
-
 .works {
 	margin-top: 70px;
 }
@@ -177,6 +172,11 @@ nav {
 
 .about {
 	padding-top: 80px;
+}
+
+.video p{
+	text-align: center;
+	margin-bottom: 320px;
 }
 
 .about-elem{
