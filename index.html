@@ -43,27 +43,92 @@
 /____ / \____ |   __/|   __/|____/|__|__\____//__/\__\
               |__|   |__|                          
 
-                        it's me
+                        привет
 
 </pre>
-<div class="info">
+<div class="info" id="my-text">
                     <span>
                         >
-<a href="https://t.me/seppukux_robot" target="_blank">auto-garant</a>
+<a href="https://t.me/seppukux_robot" target="_blank">гарант бот</a>
+
                     </span>
                     <span>
                         >
-<a href="https://t.me/UnrealNitro_robot" target="_blank">nitro-shop</a>
+<a href="https://t.me/UnrealNitro_robot" target="_blank">магазин нитро</a>
                     </span>
                     <span>
                         >
-<a href="https://discord.gg/r6nxW5JK3d" target="_blank">nitro-reviews</a>
+<a href="https://discord.gg/r6nxW5JK3d" target="_blank">отзывы нитро</a>
                     </span>
                     <span>
                         >
-<a href="https://t.me/seppukux" target="_blank">contact</a>
+<a href="https://t.me/seppukux" target="_blank">контакты</a>
                     </span>
         </div>
 </div>
+
+<!-- count particles -->
+<div class="count-particles">
+  <span class="js-count-particles"></span>
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+<script>
+function printText( el ){
+
+  let letterTimeout = 20
+
+  let text = el.innerHTML
+  let i = 2
+
+  let print__fn = function(){
+
+      if( i <= text.length ){
+        el.innerHTML = text.substr( 0, i );
+        setTimeout( arguments.callee, letterTimeout );
+      }
+
+      i++;
+    }
+
+  print__fn() // init
+};
+
+// init
+let el = document.getElementById( 'my-text' )
+printText( el );
+
+</script>
+
+
+
 </body>
 </html>
