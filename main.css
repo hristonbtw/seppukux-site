@@ -79,8 +79,8 @@ span::before {
 #overlay-toggle:checked ~ .overlay {
   animation-fill-mode: forwards;
   animation-name: fade, hide;
-  animation-delay: 0s, 600ms;
-  animation-duration: 600ms, 1ms;
+  animation-delay: 1s, 600ms;
+  animation-duration: 600ms, 1s;
 }
 #overlay-toggle:checked ~ .overlay label {
   animation-fill-mode: forwards;
@@ -88,6 +88,7 @@ span::before {
   animation-delay: 0s;
   animation-duration: 500ms;
 }
+
 @media(hover: hover) {
   .hover {
     display: block;
